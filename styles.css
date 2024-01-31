@@ -74,12 +74,18 @@ body {
     max-height: 55vh;
     margin-top: 2%;
     left: 37%;
-    position: absolute;
+    position: center;
 }
 
 @media only screen and (max-width: 600px) {
     .greetings {
         font-size: 1.5rem;
         margin-top: 20px;
+    }
+
+    .cake img {
+        max-width: 80%; /* Adjusted max-width for smaller screens */
+        max-height: 80vh; /* Adjusted max-height for smaller screens */
+        position: center;
     }
 }

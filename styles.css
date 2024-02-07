@@ -96,7 +96,18 @@ body {
     margin-top: 2%;
     left: 37%;
     position: center;
+    animation: pullUp 1s ease-in-out forwards; /* Apply pull-up animation */
 }
+
+@keyframes pullUp {
+    from {
+        transform: translateY(100%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
 
 @media only screen and (max-width: 600px) {
     .greetings {

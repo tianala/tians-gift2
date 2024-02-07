@@ -1,9 +1,15 @@
 document.addEventListener('DOMContentLoaded', function () {
     var container = document.querySelector('.container');
+    var audio = new Audio('moan.mp3'); // Create an Audio object with the path to the audio file
 
     container.addEventListener('click', function (event) {
+        playSound(); // Play the sound when the container is clicked
         createFirework(event.clientX, event.clientY);
     });
+
+    function playSound() {
+        audio.play(); // Play the audio
+    }
 
     function createFirework(x, y) {
         for (var i = 0; i < 100; i++) { // Create 100 confetti particles per firework

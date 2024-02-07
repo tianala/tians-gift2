@@ -22,7 +22,7 @@ body {
     font-weight: bolder;
     text-align: center;
     margin-top: 90px;
-    color: #f8c1c1;
+    color: #f5d8d8;
     font-family: 'Arial', sans-serif;
 }
 
@@ -36,9 +36,15 @@ body {
         text-shadow: 0 0 12px rgb(255, 27, 240), 0 0 50px rgb(255, 27, 240), 0 0 100px rgb(255, 27, 240);
     }
     10%, 90% {
-        color: #f8c1c1;
+        color: #f5d8d8;
         text-shadow: none;
     }
+}
+
+.tap{
+    text-align: center;
+    color: white;
+    font-family:'Courier New', Courier, monospace;
 }
 
 .greetings > span {
@@ -65,7 +71,18 @@ body {
     100% {
         transform: translateY(100vh) rotate(360deg);
     }
+
 }
+
+@keyframes tap-fall {
+    0% {
+        transform: translateY(0) rotate(0deg);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
 
 
 .greetings > span:nth-child(1) { animation-delay: 0.2s; }

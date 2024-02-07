@@ -79,14 +79,13 @@ body {
 
 @media only screen and (max-width: 600px) {
     .greetings {
-        font-size: 1.5rem;
-        margin-top: 50px;
+        font-size: 3.5rem;
+
     }
 
     .cake img {
         max-width: 80%; /* Adjusted max-width for smaller screens */
         max-height: 80vh; /* Adjusted max-height for smaller screens */
-        margin-top: 50px;
         position: center;
     }
 }
